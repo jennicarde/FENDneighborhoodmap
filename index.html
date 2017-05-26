@@ -1,0 +1,44 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Neighborhood Project</title>
+  <meta name="description" content="Coffee Houses in Winnipeg">
+  <meta name="author" content="Jenni">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>Explore Coffee Houses in Downtown Winnipeg</header>
+
+  <div id="container">
+    <div id="search">
+      <form>
+        <input placeholder="Ex. Starbucks" type="text" list="locationsSearch" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+      </form>
+      <ul data-bind="foreach: filterBySearch">
+        <li data-bind="text: $data.title, click: $parent.setLocation"></li>
+      </ul>
+    </div>
+    <div id="map"></div>
+  </div>
+
+  <footer>
+    <p>
+      Created by Jenni for the Front End Developer Nanodegree at Udacity<br>
+      View source code on <a href="https://github.com">GitHub</a></p>
+  </footer>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyCIZ4xJJvK8P3cC5PgLDORKNcqkSMlU_b4&callback=init">
+  </script>
+  <script src="js/oauth.min.js"></script>
+  <script src="js/oauth.signature.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

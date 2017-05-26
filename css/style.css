@@ -1,0 +1,112 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: Helvetica Neue, "Trebuchet MS", Verdana, sans-serif;
+}
+
+header {
+  background: #2196f3;
+  padding: 2%;
+  text-align: center;
+  text-shadow: 1px 1px 2px SteelBlue;
+  font-size: 1.6em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#container {
+  height: 100%;
+  position: relative;
+}
+
+#search {
+  margin: 10px;
+  width: 100%;
+}
+
+form {
+  overflow: hidden;
+}
+
+input {
+  font-size: 16px;
+}
+
+#search-field {
+  font-size: 12px;
+  width: 80%;
+}
+
+#search-btn {
+  border-radius: 0px;
+  background-color: tan;
+  border: 1px solid tan;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#map {
+  overflow: hidden;
+  height: 100%;
+  top: 10px;
+}
+
+#pano {
+  width: 200px;
+  height: 200px;
+}
+
+#yelpInfo {
+  max-width: 250px;
+  max-height: 200px;
+}
+
+footer {
+  font-size: .7em;
+  background-color: whitesmoke;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  #search {
+    width: 32%;
+    float: left;
+  }
+
+  #search-field {
+    width: 70%;
+  }
+
+  #map {
+    overflow: hidden;
+    float: right;
+    width: 65%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #search {
+    width: 26%;
+    float: left;
+  }
+
+  #search-field {
+    width: 80%;
+  }
+
+  #map {
+    overflow: hidden;
+    float: right;
+    width: 72%;
+    height: 100%;
+  }
+}
