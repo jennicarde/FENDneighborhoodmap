@@ -5,7 +5,7 @@ How to load and view the App
 =============================
 To run the app just visit: http://jennicarde.github.io/FENDneighborhoodmap <br>
 
-What the project is does
+What the project does
 ==========================
 The map displays several coffee places in Downtown Winnipeg. You can click on a map marker and view the Google StreetView and information and reviews from Yelp. You can also search and filter the coffee places through a search form.   
 
@@ -28,6 +28,7 @@ About project requirements
 
 Resources used
 ====================================
+<br>
 
 Udacity Advanced Interactive Websites <br>
 ------------------------
