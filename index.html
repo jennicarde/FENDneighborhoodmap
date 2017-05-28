@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -17,13 +18,13 @@
   <div id="container">
     <div id="search">
       <form>
-        <input placeholder="Ex. Starbucks" type="text" list="locationsSearch" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+        <input placeholder="Ex. Starbucks" type="text" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
       </form>
       <ul data-bind="foreach: filterBySearch">
         <li data-bind="text: $data.title, click: $parent.setLocation"></li>
       </ul>
     </div>
-    <div id="map"></div>
+    <div id="map" class="map-view"></div>
   </div>
 
   <footer>
@@ -34,11 +35,13 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
-  <script async defer
-      src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyCIZ4xJJvK8P3cC5PgLDORKNcqkSMlU_b4&callback=init">
-  </script>
   <script src="js/oauth.min.js"></script>
   <script src="js/oauth.signature.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://myscriptsource.com" onerror="myerrorhandler()"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyCIZ4xJJvK8P3cC5PgLDORKNcqkSMlU_b4&callback=init" onerror="googleError()">
+  </script>
+
 </body>
 </html>
