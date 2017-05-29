@@ -276,7 +276,7 @@ var ViewModel = function() {
             }),
             error: (function(jqXHR, textStatus, errorThrown) {
                 // console.log('error[' + errorThrown + '], status[' + textStatus + '], jqXHR[' + JSON.stringify(jqXHR) + ']');
-                alert("Problem occured!");
+                alert('Problem occured!');
             })
         };
         // Send AJAX query via jQuery library.
@@ -450,6 +450,11 @@ function init() {
   ko.applyBindings(new ViewModel());
 
 }; // end init function, needed for google maps api
+
+// on error handling
+var googleError = function() {
+  alert('Google Map could not be loaded.');
+};
 
 var nonce_generate = function(length) {
     var text = "";
